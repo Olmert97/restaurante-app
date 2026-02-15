@@ -1,0 +1,8 @@
+.vscode/
+*.code-workspace
+Thumbs.db
+.DS_Store
+*.bak
+*.err
+config/db_local.php
+node_modules/
