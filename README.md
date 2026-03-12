@@ -18,5 +18,3 @@ Una cadena de restaurantes con múltiples sucursales necesita un sistema integra
 
 ## Requisitos e Instalación
 1. Clonar el repositorio en tu carpeta `htdocs`:
-   ```bash
-   git clone [https://github.com/Olmert97/DIA-086-I-2026-UNAH.git](https://github.com/Olmert97/DIA-086-I-2026-UNAH.git)
