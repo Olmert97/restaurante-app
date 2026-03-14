@@ -7,7 +7,7 @@
  */
 class clase_conexion {
     protected $database_host = "localhost";
-    protected $database_name = "mydb";
+    protected $database_name = "dbrestauranteapp";
     protected $database_user = "root";
     protected $database_pass = "";
       protected $conn; 

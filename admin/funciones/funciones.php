@@ -571,7 +571,7 @@ echo <<<EOT
 <i class="ri-arrow-down-s-line ms-auto"></i>
 </a>
 <div class="collapse submenu" id="pedidos-collapse">
-<a href="#" onclick="frm_tomarPedido()"><i class="ri-pencil-line"></i> Tomar Pedido</a>
+<a href="pedidos.php" onclick="frm_tomarPedido()"><i class="ri-pencil-line"></i> Tomar Pedido</a>
 <a href="#" onclick="frm_prepararPedido()"><i class="ri-cooking-line"></i> Preparar Pedido</a>
 <a href="#" onclick="frm_cancelarPedido()"><i class="ri-close-circle-line"></i> Cancelar Pedido</a>
 </div>
