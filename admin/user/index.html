@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Restaurante</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #5568d3;
+        }
+        
+        .btn-secondary {
+            background: #764ba2;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: #64398b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍽️ Gestor de Restaurante</h1>
+        <p class="subtitle">Sistema de Gestión Integral</p>
+        
+        <style>
+    /* ... (mantén el resto de tu CSS anterior) ... */
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%; /* Asegura que el contenedor use todo el espacio */
+    }
+
+    /* Estilo base para que los enlaces <a> parezcan botones reales */
+    .btn {
+        display: block;
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none; /* Quita el subrayado azul de los enlaces */
+        border-radius: 5px;
+        transition: background 0.3s ease, transform 0.1s;
+    }
+
+    /* Color Primario (Iniciar Sesión) */
+    .btn-primary {
+        background: #667eea;
+        color: white;
+    }
+
+    .btn-primary:hover {
+        background: #5568d3;
+    }
+
+    /* Color Secundario (Registrarse) */
+    .btn-secondary {
+        background: #764ba2;
+        color: white;
+    }
+
+    .btn-secondary:hover {
+        background: #64398b;
+    }
+
+    /* Efecto de clic para ambos */
+    .btn:active {
+        transform: scale(0.98);
+    }
+</style>
+
+<div class="buttons">
+    <a href="http://localhost/restaurante-app/admin/php/login.php" class="btn btn-primary">Iniciar Sesión</a>
+    <a href="http://localhost/restaurante-app/admin/php/registro.php" class="btn btn-secondary">Registrarse</a>
+</div>
+    </div>
+</body>
+</html>
