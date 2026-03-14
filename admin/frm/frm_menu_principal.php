@@ -178,7 +178,6 @@ if($_SESSION["correo"] != "" && $_SESSION["tiempo"] != "" ){
 </style>
 
 <div class="container-fluid py-4" id="contenedor">
-    <!-- Header -->
     <!-- Estadísticas Principales -->
     <div class="row g-3 mb-4">
         <div class="col-md-3">
@@ -253,6 +252,12 @@ if($_SESSION["correo"] != "" && $_SESSION["tiempo"] != "" ){
                     <h5 class="chart-title">Productos Más Vendidos</h5>
                 </div>
                 
+                <!--
+    Aquí se podría poner un enlace a la página de detalles del plato:
+    <a href="producto_detalle.php?id=123" class="stretched-link"></a>
+    o a sección de menú y stock:
+    <a href="productos.php" class="btn btn-sm btn-outline-primary">Ver menú completo</a>
+-->
                 <div class="menu-item">
                     <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=150" alt="Hamburguesa">
                     <div class="menu-item-info">
