@@ -4,12 +4,14 @@ USE dbRestauranteApp;
 -- ======================
 -- ROL EMPLEADO
 -- ======================
-CREATE TABLE tblRolEmpleado(
- idRol INT AUTO_INCREMENT PRIMARY KEY,
- nombreRol VARCHAR(45),
- nivelAutorizacion INT,
- porcentajeDescuentoPermitido DECIMAL(5,2)
-) ENGINE=InnoDB;
+CREATE TABLE tblRolEmpleado (
+    idRol INT AUTO_INCREMENT PRIMARY KEY,
+    nombreRol VARCHAR(45) NOT NULL,
+    nivelAutorizacion INT NOT NULL,
+    porcentajeDescuentoPermitido DECIMAL(5,2) DEFAULT 0,
+    activo TINYINT(1) NOT NULL
+) ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4;
 
 -- ======================
 -- SUCURSAL
@@ -38,17 +40,23 @@ CREATE TABLE tblMesa(
 -- ======================
 -- EMPLEADO
 -- ======================
-CREATE TABLE tblEmpleado(
- idEmpleado INT AUTO_INCREMENT PRIMARY KEY,
- nombre VARCHAR(100),
- identificacion VARCHAR(50),
- estado VARCHAR(20),
- fechaIngreso DATE,
- idSucursal INT,
- idRol INT,
- FOREIGN KEY(idSucursal) REFERENCES tblSucursal(idSucursal),
- FOREIGN KEY(idRol) REFERENCES tblRolEmpleado(idRol)
-) ENGINE=InnoDB;
+CREATE TABLE tblEmpleado (
+    idEmpleado INT AUTO_INCREMENT PRIMARY KEY,
+    nombres VARCHAR(100) NOT NULL,
+    apellidos VARCHAR(100) NOT NULL,
+    identificacion VARCHAR(50) NOT NULL,
+	direccion varchar(150) NOT NULL,
+    telefono varchar(50) NOT NULL,
+    correo varchar(50) NOT NULL,
+    clave varchar(150) NOT NULL,
+    foto varchar(150) DEFAULT NULL,
+    activo tinyint(1) NOT NULL,
+    fechaIngreso DATE NULL,
+    idSucursal INT,
+    idRol INT NOT NULL,
+    FOREIGN KEY (idSucursal) REFERENCES tblSucursal(idSucursal),
+    FOREIGN KEY (idRol) REFERENCES tblRolEmpleado(idRol)
+);
 
 -- ======================
 -- TURNOS
